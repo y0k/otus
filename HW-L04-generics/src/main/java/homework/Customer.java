@@ -1,7 +1,5 @@
 package homework;
 
-import java.util.Objects;
-
 public class Customer {
     private final long id;
     private String name;
@@ -49,8 +47,6 @@ public class Customer {
 
         Customer customer = (Customer) o;
 
-        if (id != customer.id) return false;
-        if (scores != customer.scores) return false;
         return  id == customer.id;
     }
 // https://stackoverflow.com/questions/32648097/java-right-shift-integer-by-32
