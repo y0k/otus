@@ -7,8 +7,6 @@ public class Customer {
     private String name;
     private long scores;
 
-    //todone: 1. в этом классе надо исправить ошибки
-
     public Customer(long id, String name, long scores) {
         this.id = id;
         this.name = name;
@@ -55,7 +53,7 @@ public class Customer {
         if (scores != customer.scores) return false;
         return  id == customer.id;
     }
-
+// https://stackoverflow.com/questions/32648097/java-right-shift-integer-by-32
     @Override
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
