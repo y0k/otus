@@ -1,4 +1,6 @@
 rootProject.name = 'otus'
 include 'HW01-gradle'
 include 'HW-L04-generics'
+include 'HW-L06-reflection'
+
 
